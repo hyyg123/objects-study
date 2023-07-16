@@ -1,4 +1,4 @@
-package chapter_01;
+package chapter_01.before;
 
 public class Bag {
     private Long amount;
