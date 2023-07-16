@@ -8,6 +8,8 @@ public class TicketSeller {
     }
 
     public void sellTo(Audience audience) {
-        ticketOffice.sellTicketToAudience(audience);
+        Ticket ticket = ticketOffice.getTicket();
+        Long buyAmount = audience.buy(ticket);
+        ticketOffice.plusAmount(buyAmount);
     }
 }
